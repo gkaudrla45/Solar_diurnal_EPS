@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"diurnal_fw\main.o"
+"diurnal_fw\stm32l0xx_hal_msp.o"
+"diurnal_fw\stm32l0xx_it.o"
+"diurnal_fw\buffer.o"
+"diurnal_fw\system_stm32l0xx.o"
+"diurnal_fw\startup_stm32l051xx.o"
+"diurnal_fw\stm32l0xx_hal_i2c.o"
+"diurnal_fw\stm32l0xx_hal_cortex.o"
+"diurnal_fw\stm32l0xx_hal_uart.o"
+"diurnal_fw\stm32l0xx_hal_rcc_ex.o"
+"diurnal_fw\stm32l0xx_hal.o"
+"diurnal_fw\stm32l0xx_hal_flash_ex.o"
+"diurnal_fw\stm32l0xx_hal_i2c_ex.o"
+"diurnal_fw\stm32l0xx_hal_pwr_ex.o"
+"diurnal_fw\stm32l0xx_hal_gpio.o"
+"diurnal_fw\stm32l0xx_hal_uart_ex.o"
+"diurnal_fw\stm32l0xx_hal_pwr.o"
+"diurnal_fw\stm32l0xx_hal_tim.o"
+"diurnal_fw\stm32l0xx_hal_flash_ramfunc.o"
+"diurnal_fw\stm32l0xx_hal_tim_ex.o"
+"diurnal_fw\stm32l0xx_hal_rcc.o"
+"diurnal_fw\stm32l0xx_hal_dma.o"
+"diurnal_fw\stm32l0xx_hal_flash.o"
+--library_type=microlib --strict --scatter "Diurnal_FW\Diurnal_FW.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Diurnal_FW.map" -o Diurnal_FW\Diurnal_FW.axf
